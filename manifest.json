@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Wildberries Price Filter",
+  "version": "3.0",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.wildberries.ru/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
